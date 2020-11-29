@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+	
+  <title>step2</title>
+     <link rel="stylesheet"href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+     <link href="../../vendor/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+     <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+ </head>
+ <body>
+    <br>
+     <form method="post">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                就讀狀況
+            </div>
+            <div class="panel-body">
+                <table  class="table  table-hover" >
+                    <tr>
+                        <th>學制</th>
+                        <td><input type=radio name=s value=day checked>日間部&nbsp;&nbsp;
+                        <input type=radio name=s value=night >進修部</td>
+                        <th>系所</th>
+	                    <td><select name=status >
+                            <optgroup label="管理學院"> 
+                                <option value ="nation1" selected>資訊管理學系</option>
+                                <option value ="nation2">會計學系</option>
+                                <option value ="nation3">統計資訊學系</option>
+                                <option value ="nation4">金融與國際企業學系</option>
+                                <option value ="nation5">企業管理學系</option>
+                                <optgroup label="文學院"> 
+                                    <option value ="nation8">中國文學系</option>
+                                    <option value ="nation8">歷史學系</option>
+                                    <option value ="nation8">哲學系</option>
+                                <optgroup label="外國語文學院"> 
+                                    <option value ="nation9">英國語文學系</option>
+                                    <option value ="nation10">德語語文學系</option>
+                                    <option value ="nation11">法國語文學系</option>
+                                    <option value ="nation12">西班牙語文學系</option>
+                                    <option value ="nation13">日本語文學系</option>
+                                    <option value ="nation14">義大利語文學系</option>
+                                <optgroup label="藝術學院"> 
+                                    <option value ="nation16">音樂學系</option>
+                                    <option value ="nation17">應用美術學系</option>
+                                    <option value ="nation18">景觀設計學系</option>
+                                <optgroup label="傳播學院"> 
+                                    <option value ="nation19">影像傳播學系</option>
+                                    <option value ="nation20">新聞傳播學系</option>
+                                    <option value ="nation21">廣告傳播學系</option>
+                                <optgroup label="教育學院"> 
+                                    <option value ="nation22">體育學系</option>
+                                    <option value ="nation23">圖書資訊學系</option>
+                                <optgroup label="醫學院"> 
+                                    <option value ="nation14">醫學系
+                                    <option value ="nation16">護理學系</option>
+                                    <option value ="nation17">公共衛生學系</option>
+                                    <option value ="nation18">臨床心理學系</option>
+                                    <option value ="nation16">職能治療學系</option>
+                                    <option value ="nation17">呼吸治療學系</option>
+                                <optgroup label="理工學院"> 
+                                    <option value ="nation16">數學系</option>
+                                    <option value ="nation17">物理學系</option>
+                                    <option value ="nation18">化學系</option>
+                                    <option value ="nation16">生命科學系</option>
+                                    <option value ="nation17">電機工程學系</option>
+                                    <option value ="nation18">資訊工程學系</option>
+                                <optgroup label="民生學院"> 
+                                    <option value ="nation19">兒童與家庭學系</option>
+                                    <option value ="nation20">餐旅管理學系</option>
+                                    <option value ="nation21">食品科學系</option>
+                                    <option value ="nation21">營養科學系</option>
+                                <optgroup label="法律學院"> 
+                                    <option value ="nation22">法律學系</option>
+                                    <option value ="nation23">財經法律學系</option>
+                                <optgroup label="社會科學院"> 
+                                    <option value ="nation22">社會學系</option>
+                                    <option value ="nation23">社會工作學系</option>
+                                    <option value ="nation22">經濟學系</option>
+                                    <option value ="nation22">宗教學系</option>
+                                    <option value ="nation23">心理學系</option>
+                                <optgroup label="織品服裝學院"> 
+                                    <option value ="nation22">織品服裝學系</option>
+		                </select></td>
+	                    <th>年級</th>
+                        <td><select name=status >
+                            <option value ="grade1">大一</option>
+                            <option value ="grade2" selected>大二</option>
+                            <option value ="grade3">大三</option>
+                            <option value ="grade4">大四</option></select></td>
+                    </tr>
+                    <tr>
+                        <th>雙主修</th>
+                        <td><input type="text" name="ID" size="16" value="營養科學系"></td>
+                        <th>輔系</th>
+                        <td><input type="text" name="Engname" size="16"></td>
+                        <th>學程</th>
+                        <td><input type="text" name="Engname" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td colspan=6>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th colspan=2>是否同時申請其他交換學生計畫&nbsp;:&nbsp;</th>
+                        <td colspan=4><select name=status >
+                            <option value ="yes" selected>是</option>
+                            <option value ="no">否</option></select></td>
+                    </tr>
+                    <tr>
+                        <th colspan=2>是否同時申請研究所&nbsp;:&nbsp;</th>
+                        <td colspan=4><select name=status >
+                            <option value ="yes">是</option>
+                            <option value ="no"  selected>否</option></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan=2>歷年平均成績(四捨五入至小數點後第二位)&nbsp;:&nbsp;</th>
+                        <td colspan=4><input type="text" name="phonenumber" size="6" maxlength="6" value="93.58"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>      
+    <center><input type="submit" class="btn btn-outline btn-primary" value="儲存" onclick="alert('資料已儲存')"></center>
+     </form>
+ 
+     <script src="../../vendor/jquery/jquery.min.js"></script>
+     <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+     <script src="../../vendor/metisMenu/metisMenu.min.js"></script>
+     <script src="../../dist/js/sb-admin-2.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body{
+font-family:微軟正黑體;
+background-color: white;
+}
+</style>
+
+ </body>
+</html>

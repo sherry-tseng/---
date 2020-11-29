@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>基本資料填寫</title>
+     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+     <link href="../../vendor/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+     <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+ </head>
+ <body>
+     <br>
+     <form method="post">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                基本資料
+            </div>
+            <div class="panel-body">                            
+                    <table  class="table  table-hover" >
+                        <tr>
+                            <th>學號</th>
+                            <td><input type="text" name="number" size="20"></td>
+		                    <th>姓名</th>
+                            <td><input type="text" name="name" size="20"></td>
+                        </tr>
+                        <tr >               
+                            <th>身分證字號/居留證號</th>
+                            <td><input type="text" name="ID" size="20"></td>
+                            <th>英文姓名</th>
+                            <td><input type="text" name="Engname" size="20"></td>
+                        </tr>   
+                        <tr>
+                            <th>國籍</th>
+                            <td><select name=status >
+	                               <optgroup label="亞洲"> 
+		                              <option value ="nation1">臺灣</option>
+		                              <option value ="nation2">日本</option>
+		                              <option value ="nation3">中國大陸</option>
+		                              <option value ="nation4">香港</option>
+                                      <option value ="nation5">澳門</option>
+                                      <option value ="nation6">印度</option>
+		                              <option value ="nation7">越南</option>
+	                               <optgroup label="歐洲"> 
+                                        <option value ="nation8">英國</option>
+                                        <option value ="nation9">法國</option>
+                                        <option value ="nation10">德國</option>
+                                        <option value ="nation11">挪威</option>
+                                        <option value ="nation12">瑞典</option>
+                                        <option value ="nation13">芬蘭</option>
+	                               <optgroup label="美洲"> 
+                                        <option value ="nation14">美國</option>
+                                        <option value ="nation15">加拿大</option>
+	                               <optgroup label="非洲"> 
+                                        <option value ="nation16">埃及</option>
+                                        <option value ="nation17">剛果</option>
+                                        <option value ="nation18">南非</option>
+	                               <optgroup label="中南美洲"> 
+                                        <option value ="nation19">墨西哥</option>
+                                        <option value ="nation20">巴西</option>
+                                        <option value ="nation21">阿根廷</option>
+	                               <optgroup label="大洋洲"> 
+                                        <option value ="nation22">澳洲</option>
+                                        <option value ="nation23">紐西蘭</option>
+		                    </select></td>
+		                    <th>性別</th>
+                            <td><input type=radio name=gender value="m">男&nbsp;&nbsp;
+                                <input type=radio name=gender value="f">女</td>
+                        </tr>
+                        <tr>
+                            <th>生日</th>
+                            <td><input type="date"></td>
+                            <th>手機電話</th>
+                            <td><input type="text" name="phonenumber" size="20%"></td>
+                        </tr>
+                        <tr>
+                            <th>電子郵件</th>
+                            <td colspan=3><input type="text" name="emailaddress" size="80%"></td>
+                        </tr>
+                        <tr>
+                          <th>通訊地址</th>
+                          <td colspan=3><input type="text" name="address" size="80%"></td>
+                        </tr>
+                    </table>
+            </div> 
+        </div>
+    
+     
+     
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                檔案上傳
+            </div>
+            <div class="panel-body">                            
+                    <table  class="table  table-hover" >
+                        <tr>
+	                       <th>書審資料上傳&nbsp;(含讀書計畫、自傳、獲獎紀錄等佐證資料，限pdf檔)</th>
+                            <td><input type="File" name="YouFile1"></td>
+	                    </tr>
+                        <tr>
+                          <th>中文歷年成績單證明&nbsp;(限pdf檔)</th>
+                          <td><input type="File" name="YouFile2"></td>
+                        </tr>
+                        <tr>
+                          <th>語言檢定證明&nbsp;(限pdf檔)</th>
+                          <td><input type="File" name="YouFile3"></td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+    
+     <center><input type="submit" class="btn btn-outline btn-primary" value="儲存" onclick="alert('資料已儲存')"></center>
+    </form>
+     
+     <script src="../../vendor/jquery/jquery.min.js"></script>
+     <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+     <script src="../../vendor/metisMenu/metisMenu.min.js"></script>
+     <script src="../../dist/js/sb-admin-2.js"></script>
+
+ </body>
+
+ <style>
+body{
+font-family:微軟正黑體;
+background-color: white;
+}
+</style>
+
+</html>

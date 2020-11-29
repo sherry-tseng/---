@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>管理者申請資料</title>
+     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+     <link href="../../vendor/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+     <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+     <link rel="stylesheet" href="../style.css">
+
+ </head>
+ <body>
+     <br>
+     <form>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                修改語言檢定成績
+            </div>
+            <div class="panel-body">
+                <div id="table" class="table-editable">
+                    <span class="table-add glyphicon glyphicon-plus"></span>
+                    <table class="table table-hover">
+                      <thead>
+                      <tr>
+                        <th>測驗名稱</th>
+                        <th>總分</th>
+                        <th>聽</th>
+                        <th>說</th>
+                        <th>讀</th>
+                        <th>寫</th>
+                        <th>移除</th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                      </thead>
+                      <tr>
+                        <td contenteditable="false">Ex: 多益</td>
+                        <td contenteditable="false">990</td>
+                        <td contenteditable="false">495</td>
+                        <td contenteditable="false">none</td>
+                        <td contenteditable="false">495</td>
+                        <td contenteditable="false">none</td>
+                        <td><span class="table-remove glyphicon glyphicon-remove"></span></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" size="10" value="托福"></td>
+                        <td><input type="text" size="10" value="120"></td>
+                        <td><input type="text" size="5" value="30"></td>
+                        <td><input type="text" size="5" value="30"></td>
+                        <td><input type="text" size="5" value="30"></td>
+                        <td><input type="text" size="5" value="30"></td>
+                        <td><span class="table-remove glyphicon glyphicon-remove"></span></td>
+                      </tr>    
+                      <!-- This is our clonable table line -->
+                      <tr class="hide">
+                        <td><input type="text" placeholder="檢定名稱" size="10"></td>
+                        <td><input type="text" size="10"></td>
+                        <td><input type="text" size="5"></td>
+                        <td><input type="text" size="5" ></td>
+                        <td><input type="text" size="5"></td>
+                        <td><input type="text" size="5"></td>
+                        <td><span class="table-remove glyphicon glyphicon-remove"></span></td>
+                      </tr>
+                    </table>                 
+                </div>
+            </div>
+        </div>
+         <center><input type="submit" class="btn btn-outline btn-primary" value="儲存" onclick="alert('資料已儲存')"></center>  
+     </form>
+  
+     <script src="../../vendor/jquery/jquery.min.js"></script>
+     <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+     <script src="../../vendor/metisMenu/metisMenu.min.js"></script>
+     <script src="../../dist/js/sb-admin-2.js"></script>
+     <script src="../style.js"></script>
+ </body>
+ <style>
+body{
+font-family:微軟正黑體;
+background-color: white;
+}
+</style>
+
+</html>
